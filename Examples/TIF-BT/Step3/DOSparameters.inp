@@ -1,0 +1,42 @@
+
+PATH_OUTPUT='Path_to_Index_Output'
+PATH_MD='Path_to_MD_Trajectory'
+
+
+# melt
+EQ_MODEL='eq_3'
+TRJ_TYPE='.xtc'
+OLIGOMERNAME='TIFBT'
+NDX_FILENAME='TIFBTcharge_10'
+INPUT_TRJ='/bulk'
+FRAMES=5
+TIME_INTERVAL=25000 #ps between each frame
+atoms_per_chain=612 # total number of atoms in each chain
+atoms_per_chain_surr=612 # total number of atoms in each chain of the surronding molecules
+atoms_per_0chargegroup=61 # total number of atoms in each monomer to be considered for surronding charges
+                    # in case of IDTBT, I consider conjogated part plus the first methyl group of the side ch$
+repeatunits_per_chain=10 # 5mer=5, 10mer=10, 20mer=20, ...
+atoms_of_endgroups=2 # the end gropu of chains are two C united atoms
+threshold_mon = 2.0 # the threshold for finding monomers around chains in [nm]
+largest_dist=3.0 #nm largest distance of atoms in one monomer (0charge group)
+SUBMITJOB='yes'
+
+'''# soup
+EQ_MODEL='300_'
+TRJ_TYPE='.xtc'
+OLIGOMERNAME='TIFBT'
+NDX_FILENAME='TIFBTcharge_10_1'
+INPUT_TRJ='/soup_mono/900/DOS/300'
+FRAMES=250
+TIME_INTERVAL=5000 #ps between each frame
+atoms_per_chain=612 # total number of atoms in each chain
+atoms_per_chain_surr=63 # total number of atoms in each chain of the surronding molecules
+atoms_per_0chargegroup=61 # total number of atoms in each monomer to be considered for surronding charges
+                    # in case of IDTBT, I consider conjogated part plus the first methyl group of the side ch$
+repeatunits_per_chain=10 # 5mer=5, 10mer=10, 20mer=20, ...
+atoms_of_endgroups=2 # the end gropu of chains are two C united atoms
+threshold_mon = 2.0 # the threshold for finding monomers around chains in [nm]
+largest_dist=3.0 #nm largest distance of atoms in one monomer (0charge group)
+SUBMITJOB='yes'
+'''
+

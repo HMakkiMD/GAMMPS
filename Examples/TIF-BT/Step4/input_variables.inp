@@ -1,0 +1,7 @@
+polymer_name = "DPP-BTz"
+chain_length = 10
+nsample_start = 1
+nsample_end = 250
+broadening_1 = 0.0250
+E_start = -8.0
+E_end = 0.0
