@@ -30,6 +30,6 @@ Generating input files for electronic structure calculations, tailored for "melt
 Utilising Gaussian 16, this final step conducts DFT calculations to extract the Density of State (DOS) and Localisation Length (LL) of the polymers. This step is managed by one module:
 * _QC_calculation.py_
 
-It is essential to note that the input files generated in **Step 3** should be consolidated within a designated folder (e.g., input_files), placed alongside the code. Furthermore, input variables should be explicitly defined within the _input_variables.inp_ file. This module parallelizes multiple DFT calculations, facilitating efficient performance on a single computer node equipped with 40 CPU cores in the current version. 
+It is essential to note that the input files generated in **Step 3** should be consolidated within a designated folder (e.g., input_files), placed alongside the code. Furthermore, input variables (e.g., polymer name, chain length, number of samples, broadening factor, and energy limits) should be explicitly defined within the _input_variables.inp_ file. This module parallelizes multiple DFT calculations, facilitating efficient performance on a single computer node equipped with 40 CPU cores in the current version. 
 
-List of the parameters...
+**Examples of input and output files (upon the correct execution of the scripts) for two polymers discussed in (DOI) are provided in _Examples_ folder.**
