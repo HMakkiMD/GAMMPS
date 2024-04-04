@@ -1,5 +1,9 @@
 # GAMMPS: General Atomistic Modelling Method for Polymer Semiconductors
-GAMMPS offers a collection of Python modules tailored for the precise computation of electronic structure properties derived from chemical drawings of semiconducting polymers. The package streamlines the process into four distinct steps:
+GAMMPS offers a collection of Python modules tailored for the precise computation of electronic structure properties derived from chemical drawings of semiconducting polymers. 
+
+**Dependencies**: Anaconda3 2022.10, vmd 1.9, Gromacs Cuda 2022, Open Babel 3.1.0, Gaussian 16.
+
+The package streamlines the process into four distinct steps:
 
 **Step 1: Force Field Parameter Calculation**
 This initial step computes force field parameters for a designated repeat unit, formed from a series of conjugated monomers and sidechains. All specifications are centralised within the _parameters.inp_ file. This phase comprises five distinct modules:
