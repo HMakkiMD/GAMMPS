@@ -25,6 +25,8 @@ Generating input files for electronic structure calculations, tailored for "melt
 * _DOSindex.py_
 * _DOSinput_melt.py_
 * _DOSinput_soup.py_
+  
+Note that input parameters (e.g., paths to MD trajectories, polymer name, number of atoms per chain, chain length) should be specified in _DOSparameters.inp_.
 
 **Step 4: Density Functional Theory (DFT) Calculations** 
 Utilising Gaussian 16, this final step conducts DFT calculations to extract the Density of State (DOS) and Localisation Length (LL) of the polymers. This step is managed by one module:
