@@ -6,7 +6,7 @@ GAMMPS offers a collection of Python modules tailored for the precise computatio
 The package streamlines the process into four distinct steps:
 
 **Step 1: Force Field Parameter Calculation**
-This initial step computes force field parameters for a designated repeat unit, formed from a series of conjugated monomers and sidechains. All specifications are centralised within the _parameters.inp_ file. This phase comprises five distinct modules:
+This initial step computes force field parameters for a designated repeat unit, formed from a series of conjugated monomers and sidechains. All specifications are centralised within the _parameters.py_ file. This phase comprises five distinct modules:
 * _OligomerBuilder.py_ 
 * _ChargeTorsionInput.py_ 
 * _Oeff.py_ 
@@ -19,7 +19,7 @@ To complete Step 1, the following input files must be provided for each conjugat
 * An _atp_ file containing LJ parameters for all atoms (sequenced identically to the coordinate files).
 
 **Step 2: Constructing Structure Files** 
-In this phase, the package constructs coordinate files (in _xyz_ format) and force field files for the repeat unit structure, with or without sidechains, and polymers of varying chain lengths, all as specified in _parameters.inp_. This step includes three modules: 
+In this phase, the package constructs coordinate files (in _xyz_ format) and force field files for the repeat unit structure, with or without sidechains, and polymers of varying chain lengths, all as specified in _parameters.py_. This step includes three modules: 
 * _RU_builder.py_
 * _SC_RU_builder.py_
 * _PO_builder.py_.
@@ -30,7 +30,7 @@ Generating input files for electronic structure calculations, tailored for "melt
 * _DOSinput_melt.py_
 * _DOSinput_soup.py_
   
-Note that input parameters (e.g., paths to MD trajectories, polymer name, number of atoms per chain, chain length) should be specified in _DOSparameters.inp_.
+Note that input parameters (e.g., paths to MD trajectories, polymer name, number of atoms per chain, chain length) should be specified in _DOSparameters.py_.
 
 **Step 4: Density Functional Theory (DFT) Calculations** 
 Utilising Gaussian 16, this final step conducts DFT calculations to extract the Density of State (DOS) and Localisation Length (LL) of the polymers. This step is managed by one module:
