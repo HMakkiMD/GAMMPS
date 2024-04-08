@@ -10,7 +10,8 @@ and will give "ENERGYSUB", which is a list containing the excess value of energy
 for all confromers as compared to the one with the lowest energy value. Thus,
 the index of the minimum of ENERGYSUB is the most stable configuration.
 
-The input files for atomic charge calculations as well as all intermonomer torsional scans (based on the oligomer structure) to be calculated by Gaussian 16 will be generated and submitted.
+The input files for atomic charge calculations as well as all intermonomer torsional scans (based on the oligomer structure) 
+to be calculated by Gaussian 16 will be generated and submitted.
 
 '''
 
