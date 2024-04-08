@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the first code to run in this step.
+
+This code generates the index files for GROMACS to generate input files for DOS and localization length calculations.
+The output of this step is a prerequisite for the second and third codes of Step 3.
+
+'''
+
+
 import numpy as np
 import subprocess
 import copy as cp
