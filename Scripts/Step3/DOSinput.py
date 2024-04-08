@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the second code to run in this step.
+
+This code generates the chain and surrounding coordinate (.xyz) files as input for DOS and localization length calculations in Step 4
+from the trajectory of MD simulation. The path to the trajectory and the type of trajectory (e.g., .xtc or .trr) should be given in 
+the DOSparameters.py.
+
+'''
+
+
 import collections
 import numpy as np
 import copy as cp
