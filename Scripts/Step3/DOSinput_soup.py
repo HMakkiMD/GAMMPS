@@ -6,6 +6,16 @@ import os
 import time
 import re
 
+'''
+This is the third code to run in this step.
+
+This code generates the chain and surrounding coordinate (.xyz) files as input for DOS and localization length calculations in Step 4
+from the trajectory of MD "soup" simulation as explained in (DOI). The path to the trajectory and the type of trajectory (e.g., .xtc or .trr) 
+should be given in the DOSparameters.py.
+
+'''
+
+
 from DOSparameters import *
 moleculename=OLIGOMERNAME
 path_to_dosindex=PATH_OUTPUT+moleculename+'/DOS/'
