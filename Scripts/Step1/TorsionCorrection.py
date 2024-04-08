@@ -2,6 +2,7 @@
 # coding: utf-8
 
 '''
+This is the fourth code to run in Step 1.
 
 This code performs the correction for intermonomer torsional potential. 
 It calculates the ΔV = V_QM − V_MM where V_QM represents the total potential energy of the oligomer at each scan point from DFT scan
