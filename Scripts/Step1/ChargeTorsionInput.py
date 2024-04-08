@@ -4,11 +4,14 @@
 '''
 This is the second code to run in Step 1.
 
-Extracting the single point energy from Gaussian log file. 
-Just give the path to open the log file that contains optimization by Gaussian 
-and the code will give "ENERGYSUB", which is a list contain the exess value of energy 
+Extracting the single point energy from the Gaussian 16 log files. 
+It extracts the energy values from the Gaussian 16 log files generated previously
+and the code will give "ENERGYSUB", which is a list containing the excess value of energy 
 for each configuration as compared to the configuration with the lowest energy. Thus,
-the index of the min of ENERGYSUB is the most stable configuration.
+the index of the minimum of ENERGYSUB is the most stable configuration.
+
+The input files for atomic charge calculations as well as all intermonomer torsional scans (based on the oligomer structure)
+to be done by Gaussian 16 will be generated and submitted.
 '''
 
 import numpy as np
