@@ -1,11 +1,3 @@
-import collections
-import numpy as np
-import copy as cp
-import subprocess
-import os
-import time
-import re
-
 '''
 This is the third code to run in this step.
 
@@ -15,6 +7,13 @@ should be given in the DOSparameters.py.
 
 '''
 
+import collections
+import numpy as np
+import copy as cp
+import subprocess
+import os
+import time
+import re
 
 from DOSparameters import *
 moleculename=OLIGOMERNAME
