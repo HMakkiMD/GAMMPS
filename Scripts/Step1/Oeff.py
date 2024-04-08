@@ -2,6 +2,7 @@
 # coding: utf-8
 
 '''
+This is the third code to run in Step 1.
 
 Generating the structure file and the force field parameters for the repeat unit of the polymer as given in parameters.py: 
 1- The code takes the LJ parameters from atp files provided as input files for each monomer. 
