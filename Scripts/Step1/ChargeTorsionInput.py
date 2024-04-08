@@ -7,7 +7,7 @@ This is the second code to run in Step 1.
 This code extracts the single point energy from the Gaussian 16 log files. 
 It reads the energy values from the Gaussian 16 log files generated previously
 and will give "ENERGYSUB", which is a list containing the excess value of energy 
-for all confromers as compared to the one with the lowest energy value. Thus,
+for all conformers as compared to the one with the lowest energy value. Thus,
 the index of the minimum of ENERGYSUB is the most stable configuration.
 
 The input files for atomic charge calculations as well as all intermonomer torsional scans (based on the oligomer structure) 
