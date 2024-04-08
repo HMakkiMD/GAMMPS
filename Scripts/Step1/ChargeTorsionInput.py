@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the second code to run in Step 1.
+
+Extracting the single point energy from Gaussian log file. 
+Just give the path to open the log file that contains optimization by Gaussian 
+and the code will give "ENERGYSUB", which is a list contain the exess value of energy 
+for each configuration as compared to the configuration with the lowest energy. Thus,
+the index of the min of ENERGYSUB is the most stable configuration.
+'''
+
 import numpy as np
 import os
 import subprocess
@@ -11,14 +21,6 @@ start = time.time()
 
 from parameters import *
 
-
-'''
-Extracting the single point energy from Gaussian log file. 
-Just give the path to open the log file that contains optimization by Gaussian 
-and the code will give "ENERGYSUB", which is a list contain the exess value of energy 
-for each configuration as compared to the configuration with the lowest energy. Thus,
-the index of the min of ENERGYSUB is the most stable configuration.
-'''
 
 parent_dir=cp.deepcopy(PATH_OUTPUT) #the Gaussian log files should be generated in the same folder as oligomer.xyz and .com files
 moleculename = OLIGOMERNAME
