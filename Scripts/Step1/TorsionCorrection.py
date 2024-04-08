@@ -1,6 +1,16 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+
+This code performs the correction for intermonomer torsional potential. 
+It calculates the ΔV = V_QM − V_MM where V_QM represents the total potential energy of the oligomer at each scan point from DFT scan
+and V_MM is the total potential energy minus the targeted torsional potential obtained from the generated force field at each scan point.
+For each scan point, the code generates input files for energy minimization by GROMACS with restraints on the targeted torsion.
+The magnitude of the restraint should be provided in parameters.py.
+
+'''
+
 import subprocess
 import numpy as np
 from matplotlib import pyplot as plt
