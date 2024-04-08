@@ -2,6 +2,7 @@
 # coding: utf-8
 
 '''
+This is the fifth code to run in Step 1.
 
 This code checks if the total energy from the force field at each scan point matches the DFT-calculated torsional potential.
 It plots both values (V_tot and V_DFT) at each scan point for all torsions in the oligomer structure separately which can be seen
