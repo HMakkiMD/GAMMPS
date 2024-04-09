@@ -6,7 +6,7 @@ GAMMPS offers a collection of Python modules tailored for the precise computatio
 The package streamlines the process into four distinct steps:
 
 **Step 1: Force Field Parameter Calculation**
-This initial step computes force field parameters for a designated repeat unit, formed from a series of conjugated monomers and sidechains. All specifications are centralised within the _parameters.py_ file. This phase comprises five distinct modules:
+This initial step computes force field parameters for a designated repeat unit, formed from a series of conjugated monomers and sidechains. All specifications are centralized within the _parameters.py_ file. This phase comprises five distinct modules:
 * _OligomerBuilder.py_ 
 * _ChargeTorsionInput.py_ 
 * _Oeff.py_ 
@@ -33,7 +33,7 @@ Generating input files for electronic structure calculations, tailored for "melt
 Note that input parameters (e.g., paths to MD trajectories, polymer name, number of atoms per chain, chain length) should be specified in _DOSparameters.py_.
 
 **Step 4: Density Functional Theory (DFT) Calculations** 
-Utilising Gaussian 16, this final step conducts DFT calculations to extract the Density of State (DOS) and Localisation Length (LL) of the polymers. This step is managed by one module:
+Utilizing Gaussian 16, this final step conducts DFT calculations to extract the Density of State (DOS) and Localisation Length (LL) of the polymers. This step is managed by one module:
 * _QC_calculation.py_
 
 It is essential to note that the input files generated in **Step 3** should be consolidated within a designated folder (e.g., input_files), placed alongside the code. Furthermore, input variables (e.g., polymer name, chain length, number of samples, broadening factor, and energy limits) should be explicitly defined within the _input_variables.inp_ file. This module parallelizes multiple DFT calculations, facilitating efficient performance on a single computer node equipped with 40 CPU cores in the current version. 
