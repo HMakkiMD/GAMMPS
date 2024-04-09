@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the second code to run in this step.
+
+This code generates the coordinate (.xyz) and force field (.itp and .top according to GROMACS file formats) files
+for the repeat unit structure with the sidechains specified in parameters.py.
+
+'''
+
+
 import collections
 import numpy as np
 import copy as cp

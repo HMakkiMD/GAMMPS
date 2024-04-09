@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+'''
+This is the first code to run in Step 1.
+This code generates the oligomer structures (in xyz format) from the monomer sequence given in parameters.py 
+and the input xyz files given in the "fragments" folder which should be provided alongside the code (see Examples).
+It also generates Gaussian input files for all possible relative cis/trans conformers and 
+submits the Gaussian calculations to find the conformer with the minimum potential energy for the next step.
 
+'''
 
 import numpy as np
 import subprocess

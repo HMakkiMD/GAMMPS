@@ -3,7 +3,7 @@
 #SBATCH -N 1
 #SBATCH -n 40
 #SBATCH -t 72:00:00
-#SBATCH -J TIF-BT
+#SBATCH -J "PolymerName"
 #SBATCH -p "CPUnode"
 
 module load apps/gaussian/16

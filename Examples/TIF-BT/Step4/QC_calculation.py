@@ -1,3 +1,17 @@
+'''
+This code generates Gaussian 16 input files from the chain and surrounding coordinate (.xyz)
+files located in the 'input_files' directory and the monomer charge file (ending in 'charges.txt') 
+located in the current working directory. It submits a single-point calculation for each generated 
+input file utilizing 4 CPU cores per calculation (max. 40 CPU cores total in parallel).
+
+The bulk DOS and LL is calculated by averaging over the DOS and LL computed for each 
+sample and written to the files '{polymer_name}_DOS_{broadening_1string}.txt' and '{polymer_name}_LL_{broadening_1string}.txt', 
+where the variables enclosed in {} should be specified in the 'input_variables.inp' file.
+
+None of the input ('.com'), checkpoint ('.chk'), output ('.log'), or ('.npz') files are retained in the 
+the current version of the code.
+'''
+
 import numpy as np
 import os
 import re

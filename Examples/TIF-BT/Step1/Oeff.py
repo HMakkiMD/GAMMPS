@@ -1,6 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the third code to run in Step 1.
+
+Generating the structure file and the force field parameters for the repeat unit of the polymer as given in parameters.py: 
+1- The code takes the LJ parameters from atp files provided as input files for each monomer. 
+2- The atomic charges will be taken from Gaussian log file generated in the previous step.
+3- The bond and angle values will be taken from the optimized structure of the oligomer with the minimum potential energy.
+4- The torsional potential will be taken from the Gaussian torsional scan logs generated in the previous step.
+
+'''
+
 import subprocess
 import numpy as np
 from matplotlib import pyplot as plt

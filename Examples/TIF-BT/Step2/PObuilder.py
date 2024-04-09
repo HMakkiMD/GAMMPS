@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the third code to run in this step.
+
+This code generates the coordinate (.xyz) and force field (.itp and .top according to GROMACS file formats) files
+for the polymer structures with the lengths specified in parameters.py.
+
+'''
+
+
 import numpy as np
 import copy as cp
 import math

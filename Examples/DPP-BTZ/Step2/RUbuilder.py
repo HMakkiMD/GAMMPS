@@ -1,6 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+'''
+This is the first code to run in this step.
+
+This code generates the coordinate (.xyz) and force field (.itp and .top according to GROMACS file formats) files
+for the repeat unit structure specified in parameters.py.
+
+'''
+
+
 import subprocess
 import numpy as np
 from matplotlib import pyplot as plt

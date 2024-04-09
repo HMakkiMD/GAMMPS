@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-#SBATCH --job-name TIF-BT
+#SBATCH --job-name "PolymerName"
 #SBATCH -p "CPU_node"
 #SBATCH -N 1
 #SBATCH -n 4
