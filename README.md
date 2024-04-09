@@ -12,7 +12,17 @@ This initial step computes force field parameters for a designated repeat unit, 
 * _Oeff.py_ 
 * _TorsionCorrection.py_ 
 * _FF_test.py_.
+
+Please note that the following atom numbering convention for each monomer to build the oligomer by the first code of this step is necessary! 
+
+ ![Numbering](https://github.com/HMakkiMD/GAMMPS/assets/107540794/2d8f52cf-2f35-4e79-a892-a1e6a51b666e)
  
+In this way, the code will attach atoms No. 1 of each monomer after removing the hydrogens attaching to them. 
+Also, it is important that the connecting atoms to the connecting carbon of each monomer follow the same conviction 
+as shown in the figure for the code to keep track of new angular and torsional potentials to be calculated.
+
+
+
 To complete Step 1, the following input files must be provided for each conjugated monomer:
 
 * Optimized coordinate files in both _xyz_ and _mol_ formats
